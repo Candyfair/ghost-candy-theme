@@ -1,0 +1,51 @@
+body {
+  /* background-color: #F5F5F5; */
+  background-color: #FFFFFF;
+  color: #001C46;
+  font-family: nunito, sans-serif;
+  font-weight: 400;
+}
+
+/* ----------------------- GHOST ADMIN ----------------------- */
+/* Hide Ghost's subscribe button */
+#ghost-portal-root {
+  display: none;
+}
+
+.kg-width-full img,
+.kg-width-wide img {
+    /* required by gcsan to properly validate the theme */
+}
+
+/* ####################### MOBILE VIEW ####################### */
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ----------------------- Header (mobile) ----------------------- */
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.header__logo {
+  grid-column: 1 / 2;
+  grid-row: 1;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__nav {
+  grid-column: 2 / 3;
+  grid-row: 1;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
