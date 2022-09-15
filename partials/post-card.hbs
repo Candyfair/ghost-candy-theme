@@ -2,7 +2,7 @@
 
   {{!-- Si image --}}
   {{#if feature_image}}
-  <div class="post-card__image-wrapper{{#has index="0"}} post-card__image-wrapper-featured{{/has}}{{^has index="0"}} post-card__image-wrapper-other{{/has}}">
+  <div class="post-card__image-wrapper{{#has index="0"}} post-card__image-wrapper-featured{{/has}}">
     <a href="{{url}}">
       <img class="post-card__image"
         srcset="{{img_url feature_image size="s"}} 300w,
@@ -19,12 +19,41 @@
   {{/if}}
   
   {{!-- Tag, titre, (extrait) et meta --}}
-  <div class="post-card__content-wrapper{{#has index="0"}} post-card__content-wrapper-featured{{/has}}{{^has index="0"}} post-card__content-wrapper-other{{/has}}">
-    <p>Tag</p>
-    <p>Titre</p>
-    <p>Extrait</p>
-    <p>Meta</p>
-    <hr>
+  <div class="post-card__content-wrapper{{#has index="0"}}-featured{{/has}}">
+
+    <div class="post-card-tags">
+    {{#primary_tag}}
+      <a href="{{url}}" class="post-card__primary-tag{{#is "home"}}{{#has index="0"}} post-card__primary-tag-large{{/has}}{{/is}}">
+        {{name}}
+      </a>
+    {{/primary_tag}}
+    </div>
+
+    <a href="{{url}}">
+      <h2 class="post-card__title{{#is "home"}}{{#has index="0"}} post-card__title-large{{/has}}{{/is}}">
+        {{title}}
+      </h2>
+    </a>
+
+    {{#is "home"}}
+    {{#has index="0"}}
+    {{#if excerpt}}
+      <div class="post-card__excerpt">{{excerpt}}</div>
+    {{/if}}
+    {{/has}}
+    {{/is}}
+
+    <div class="post-card__meta{{#is "home"}}{{#has index="0"}} post-card__meta-large{{/has}}{{/is}}">
+      <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+      {{#if reading_time}}
+        <span>· {{reading_time}}</span>
+      {{/if}}
+
+      {{#if @site.comments_enabled}}
+        {{comment_count}}
+      {{/if}}
+    </div>
+
   </div>
 
 
