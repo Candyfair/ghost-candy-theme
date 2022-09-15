@@ -12,11 +12,6 @@ a {
 }
 
 /* ----------------------- GHOST ADMIN ----------------------- */
-/* Hide Ghost's subscribe button */
-#ghost-portal-root {
-  display: none;
-}
-
 .kg-width-full img,
 .kg-width-wide img {
     /* required by gcsan to properly validate the theme */
@@ -148,5 +143,50 @@ a {
   font-size: 0.9rem;
 }
 
+/* --------- Footer (mobile) --------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #001C46;
+  color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer__signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem auto;
+}
+
+.footer__signup__text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer__signup__button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: 160px;
+  border: 3px solid #C10080;
+  border-radius: 30px;
+  background-color: #C10080;
+  color: #fff;
+  margin-top: 1rem;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
 
 
