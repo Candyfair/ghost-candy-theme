@@ -1,3 +1,14 @@
 {{!< default}}
 
-<h1>Index</h1>
+<div class="posts">
+
+  <div class="posts__feed">
+      {{#foreach posts}}
+          {{> "post-card"}}
+      {{/foreach}}
+  </div>
+
+  {{!-- Ajouter pagination --}}
+
+
+</div>
