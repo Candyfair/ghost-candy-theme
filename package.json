@@ -1,6 +1,6 @@
 {
     "name": "candy-gets-handy",
-    "description": "A clean and colorful theme for the Ghost publishing platform",
+    "description": "A clean and minimal theme for the Ghost publishing platform",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=5.0.0"
@@ -69,7 +69,7 @@
                 "width": 100
             },
             "s": {
-                "width": 300
+                "width": 400
             },
             "m": {
                 "width": 600

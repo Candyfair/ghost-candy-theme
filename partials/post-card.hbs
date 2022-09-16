@@ -1,8 +1,8 @@
-<article class="post-card{{#has index="0"}}-featured{{/has}}">
+<article class="post-card{{#is "home"}}{{#has index="0"}}-featured{{/has}}{{/is}}">
 
   {{!-- Si image --}}
   {{#if feature_image}}
-  <div class="post-card__image-wrapper{{#has index="0"}} post-card__image-wrapper-featured{{/has}}">
+  <div class="post-card__image-wrapper{{#is "home"}}{{#has index="0"}} post-card__image-wrapper-featured{{/has}}{{/is}}">
     <a href="{{url}}">
       <img class="post-card__image"
         srcset="{{img_url feature_image size="s"}} 300w,
@@ -19,7 +19,7 @@
   {{/if}}
   
   {{!-- Tag, titre, (extrait) et meta --}}
-  <div class="post-card__content-wrapper{{#has index="0"}}-featured{{/has}}">
+  <div class="post-card__content-wrapper{{#is "home"}}{{#has index="0"}}-featured{{/has}}{{/is}}">
 
     <div class="post-card-tags">
     {{#primary_tag}}

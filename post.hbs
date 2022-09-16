@@ -1,3 +1,69 @@
 {{!< default}}
 
-<h1>Post</h1>
+{{#post}}
+<article class="article">
+
+  {{!-- Article header --}}
+  <div class="article__header">
+
+    {{!-- Article header content --}}
+    {{#primary_tag}}
+    <p class="article__header__tag">{{name}}</p>
+    {{/primary_tag}}
+
+    <h1 class="article__header__title">{{title}}</h1>
+
+    {{#if custom_excerpt}}
+      <p class="article__excerpt">{{custom_excerpt}}</p>
+    {{/if}}
+
+    <div class="article__meta">
+      <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+      {{#if reading_time}}
+        <span>· {{reading_time}}</span>
+      {{/if}}
+    </div>
+
+    {{!-- Article featured image --}}
+    {{#if feature_image}}
+    <figure class="article__featured-image-wrapper">
+      <img
+          srcset="{{img_url feature_image size="s"}} 400w,
+                  {{img_url feature_image size="m"}} 600w,
+                  {{img_url feature_image size="l"}} 1000w,
+                  {{img_url feature_image size="xl"}} 2000w"
+          sizes="(min-width: 1400px) 1400px, 80vw"
+          src="{{img_url feature_image size="xl"}}"
+          alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+          class="article__featured-image"
+      />
+    </figure>
+
+    {{#if feature_image_caption}}
+    <figcaption class="figure__caption">{{feature_image_caption}}</figcaption>
+    {{/if}}
+    {{/if}}
+
+  </div>
+
+  {{!-- Content --}}
+  <section class="article__content">
+    {{content}}
+  </section>
+
+
+</article>
+{{/post}}
+
+{{!-- Similar articles --}}
+{{#get 'posts' filter="primary_tag:{{post.primary_tag.slug}}+id:-{{post.id}}"}}
+	<div class="similar-articles">
+    <h2 class="similar-articles__title">Similar articles</h2></a>
+
+	  <div class="post-feed">
+      {{#foreach posts limit="3" order="published_at desc"}}
+        {{> "post-card"}}
+      {{/foreach}}
+	  </div>
+	</div>
+{{/get}}

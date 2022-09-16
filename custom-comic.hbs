@@ -1,0 +1,29 @@
+{{!< default}}
+
+{{#post}}
+<article class="comic">
+
+  {{!-- Content --}}
+  <section class="comic__content">
+    {{content}}
+  </section>
+
+  {{!-- Article header --}}
+  <div class="comic__header comic__content">
+
+    {{!-- Article meta info --}}
+    <div>
+      <div class="article__meta">
+        Published on <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+      </div>
+    </div>
+  </div>
+
+</article>
+
+{{!-- Navigation --}}
+{{> "pagination-comics"}}
+
+{{/post}}
+
+
