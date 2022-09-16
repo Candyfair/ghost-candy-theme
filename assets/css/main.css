@@ -143,6 +143,28 @@ a {
   font-size: 0.9rem;
 }
 
+/* --------- Pagination (mobile) --------- */
+.pagination {
+  display: flex;
+  justify-content: center;  
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.page-number {
+  color: #C10080;
+}
+
+.newer-posts,
+.older-posts {
+  padding-top: 4px;
+}
+
 /* --------- Footer (mobile) --------- */
 .footer {
   display: flex;
