@@ -1,0 +1,11 @@
+{{#get 'posts' filter="primary_tag:{{post.primary_tag.slug}}+id:-{{post.id}}"}}
+	<div class="similar-articles">
+    <h2 class="similar-articles__title">Similar articles</h2></a>
+
+	  <div class="post-feed">
+      {{#foreach posts limit="3" order="published_at desc"}}
+        {{> "post-card"}}
+      {{/foreach}}
+	  </div>
+	</div>
+{{/get}}

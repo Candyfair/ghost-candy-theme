@@ -1,0 +1,25 @@
+{{!< default}}
+
+<div class="category">
+
+  <h1 class="category__title">{{tag.name}}</h1>
+
+  {{#if tag.description}}
+  <p class="category__description">{{tag.description}}</p>
+  {{/if}}
+
+  <h2 class="category__latest-posts">{{#get 'posts' filter="primary_tag:{{tag.slug}}"}}{{posts.length}}{{/get}} {{#tag}}{{^has slug="comics"}}articles{{/has}}{{#has slug="comics"}}comics{{/has}}{{/tag}}</h2>
+
+  {{!-- List of posts --}}
+  {{#get 'posts' filter="primary_tag:{{tag.slug}}"}}
+    <div class="post-feed">
+        {{#foreach posts}}
+            {{> "post-card"}}
+        {{/foreach}}
+    </div>
+  {{/get}}
+
+</div>
+
+
+
