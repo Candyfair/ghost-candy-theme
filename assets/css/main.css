@@ -132,6 +132,19 @@ a {
   align-items: center;
 }
 
+.header__bubble-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 8px;
+}
+
+.header__bubble {
+  transform: rotate(15deg);
+  height: 90px;
+  width: auto;
+}
+
 .header__nav {
   grid-column: 2 / 3;
   grid-row: 1;
@@ -245,6 +258,7 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  margin-top: 16px;
 }
 
 .category__title {
