@@ -24,6 +24,14 @@ a {
   padding: 16px;
 }
 
+/* -- Tablets */
+@media screen and (min-width: 600px) {
+  .page-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 /* --------- Menu mobile --------- */
 .menu-mobile-burger {
   width: 30px;
@@ -183,6 +191,9 @@ a {
   .posts__feed {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 
   .post-card {
@@ -202,10 +213,17 @@ a {
     
     grid-column: 1 / 7;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .filling-empty-space-childs {
+    width: calc(100% / 3 - 32px); /*the width of the images in this example*/
+    height: 0; /*Important! for the divs to collapse should they fall in a new row*/
+    
+  }
+  
 }
 
 .post-card__image-wrapper {
@@ -225,16 +243,26 @@ a {
   height: 200px;
 }
 
+.post-card__image {
+  width: 100%;
+  border-radius: 20px;
+}
+
 /* -- Tablets */
 @media screen and (min-width: 600px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
   }
-}
-
-.post-card__image {
-  width: 100%;
-  border-radius: 20px;
+  .post-card__image__height-wrapper {
+    height: 200px;
+  }
+  
+  .post-card__image__height {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;    
+  }
+  
 }
 
 /* Post card content */
@@ -381,6 +409,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* -- Tablets */
+@media screen and (min-width: 600px) {
+  .article__featured-image-wrapper {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
 }
 
 .article__featured-image {
