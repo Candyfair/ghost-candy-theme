@@ -411,6 +411,15 @@ a {
   align-items: center;
 }
 
+/* -- Tablets */
+@media screen and (min-width: 600px) {
+  .article__featured-image-wrapper {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+}
+
 .article__featured-image {
   width: 100%;
 }
