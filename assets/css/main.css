@@ -180,13 +180,31 @@ a {
 
 /* -- Tablets */
 @media screen and (min-width: 600px) {
+  .posts__feed {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .post-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: calc(100% / 3 - 32px);
+  }
+
   .post-card-featured {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     gap: 16px;
+    
+    grid-column: 1 / 7;
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
