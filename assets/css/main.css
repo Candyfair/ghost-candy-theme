@@ -24,6 +24,14 @@ a {
   padding: 16px;
 }
 
+/* -- Tablets */
+@media screen and (min-width: 600px) {
+  .page-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 /* --------- Menu mobile --------- */
 .menu-mobile-burger {
   width: 30px;
@@ -183,6 +191,7 @@ a {
   .posts__feed {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: -16px;
     margin-right: -16px;
   }
@@ -207,6 +216,12 @@ a {
     margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .filling-empty-space-childs {
+    width: calc(100% / 3 - 32px); /*the width of the images in this example*/
+    height: 0; /*Important! for the divs to collapse should they fall in a new row*/
+    
   }
   
 }

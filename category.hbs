@@ -13,10 +13,16 @@
   {{!-- List of posts --}}
   {{#get 'posts' filter="primary_tag:{{tag.slug}}"}}
     <div class="posts__feed">
-        {{#foreach posts}}
-            {{> "post-card"}}
-        {{/foreach}}
+      {{#foreach posts}}
+          {{> "post-card"}}
+      {{/foreach}}
+
+      <div class="filling-empty-space-childs"></div>
+      <div class="filling-empty-space-childs"></div>
+      <div class="filling-empty-space-childs"></div>
+
     </div>
+
   {{/get}}
 
 </div>
