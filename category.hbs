@@ -12,7 +12,7 @@
 
   {{!-- List of posts --}}
   {{#get 'posts' filter="primary_tag:{{tag.slug}}"}}
-    <div class="post-feed">
+    <div class="posts__feed">
         {{#foreach posts}}
             {{> "post-card"}}
         {{/foreach}}
