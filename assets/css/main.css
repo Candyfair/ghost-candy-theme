@@ -202,10 +202,11 @@ a {
     
     grid-column: 1 / 7;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
   }
+  
 }
 
 .post-card__image-wrapper {
@@ -225,16 +226,26 @@ a {
   height: 200px;
 }
 
+.post-card__image {
+  width: 100%;
+  border-radius: 20px;
+}
+
 /* -- Tablets */
 @media screen and (min-width: 600px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
   }
-}
-
-.post-card__image {
-  width: 100%;
-  border-radius: 20px;
+  .post-card__image__height-wrapper {
+    height: 200px;
+  }
+  
+  .post-card__image__height {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;    
+  }
+  
 }
 
 /* Post card content */
