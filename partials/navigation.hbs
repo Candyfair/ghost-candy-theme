@@ -19,25 +19,24 @@
 </ul>
 </div> --}}
 
-{{!-- Menu for mobile --}}
-{{!-- <button class="menu-mobile-burger" onClick="javascript:openMenu()"></button> --}}
-<button class="menu-mobile-burger"></button>
 
+{{!-- Button to open mobile menu --}}
+<button class="menu-mobile-burger"></button>
 
 {{!-- Mobile menu --}}
 <div class="menu-mobile">
   <div class="menu-mobile__container">
     <ul>
-      <li><a href="/about/" class="menu-mobile__link">About</a></li>
-      {{#get "tags" limit="all" order="name asc" filter="slug:[illustration, comics, crafts, web-development]"}}
+      {{#get "tags" limit="all" order="name desc" filter="slug:[illustration, comics, crafts, web-development]"}}
       {{#foreach tags}}
       <li><a href="{{url}}" class="menu-mobile__link">{{name}}</a></li>
       {{/foreach}}
       {{/get}}
+      <li><a href="/about/" class="menu-mobile__link">About</a></li>
     </ul>
 
     {{!-- Shop button --}}
-    <button class="menu-mobile__shop-button">Shop</button>
+    <button class="menu-mobile__shop-button" onclick="window.open('https://www.candyfairstudio.com/shop', '_blank')">Shop</button>
 
     {{!-- Search field --}}
     <input class="menu-mobile__search" type="input" />
