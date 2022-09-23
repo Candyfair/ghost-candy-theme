@@ -251,6 +251,13 @@ a {
   align-items: center;
 }
 
+/* -- Desktop */
+@media screen and (min-width: 1024px) {
+  .posts__feed {
+    width: 100%;
+  }
+}
+
 /* -- Tablets */
 @media screen and (min-width: 600px) {
   .posts__feed {
@@ -284,9 +291,8 @@ a {
   }
 
   .filling-empty-space-childs {
-    width: calc(100% / 3 - 32px); /*the width of the images in this example*/
+    width: calc(100% / 3); /*the width of the images in this example*/
     height: 0; /*Important! for the divs to collapse should they fall in a new row*/
-    
   }
   
 }
@@ -559,6 +565,22 @@ hr {
   margin-top: 16px;
   margin-bottom: 24px;
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .comic {
+    align-items: center;
+  }
+
+  .comic__content {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .webcomic {
+    max-width: 800px;
+  }
+
 }
 
 .comic__content figure {  /* Stretch images */
