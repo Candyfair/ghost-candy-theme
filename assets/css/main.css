@@ -323,6 +323,7 @@ a {
 @media screen and (min-width: 600px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
+    height: 300px;
   }
   .post-card__image__height-wrapper {
     height: 200px;
@@ -331,7 +332,25 @@ a {
   .post-card__image__height {
     object-fit: cover;
     height: 200px;
-    width: 100%;    
+    width: 200px;    
+  }
+  
+}
+
+/* -- Desktop */
+@media screen and (min-width: 1024px) {
+  .post-card__image-wrapper-featured {
+    grid-column: 1 / 4;
+    height: 400px;
+  }
+  .post-card__image__height-wrapper {
+    height: 300px;
+  }
+  
+  .post-card__image__height {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;    
   }
   
 }
@@ -529,8 +548,10 @@ a {
 
 .kg-image {
   width: 100%;
+  max-width: 800px;
   height: auto;
   border-radius: 30px;
+  margin: 0 auto;
 }
 
 blockquote {
