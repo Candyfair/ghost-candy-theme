@@ -206,7 +206,12 @@ a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .header__bubble-wrapper {
+    top: 15px;
+  }
 }
 
 /* -- Desktop */
@@ -329,6 +334,11 @@ a {
 .post-card__image {
   width: 100%;
   border-radius: 20px;
+}
+
+.post-card__image__height {
+  width: 130px;
+  height: 100px;
 }
 
 /* -- Tablets */
