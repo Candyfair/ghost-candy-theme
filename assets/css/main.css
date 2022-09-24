@@ -17,7 +17,6 @@ a {
     /* required by gcsan to properly validate the theme */
 }
 
-/* ####################### MOBILE VIEW ####################### */
 .page-container {
   width: 100%;
   margin: 0 auto;
@@ -30,6 +29,13 @@ a {
     padding-left: 32px;
     padding-right: 32px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-container {
+    max-width: 1200px;
+  }
+
 }
 
 /* --------- Menu desktop --------- */
@@ -206,10 +212,16 @@ a {
 /* -- Desktop */
 @media screen and (min-width: 1024px) {
   .header__bubble-wrapper {
-    left: 120px;
+    left: 140px;
     transform: none;
   }  
+}
 
+/* -- Big desktop */
+@media screen and (min-width: 1200px) {
+  .header__bubble-wrapper {
+    display: none;
+  }  
 }
 
 .header__bubble {
@@ -450,7 +462,7 @@ a {
 
 }
 
-/* --------- Post page (mobile) --------- */
+/* --------- POST PAGE --------- */
 .article {
   display: flex;
   justify-content: flex-start;
@@ -507,7 +519,13 @@ a {
     margin-left: -32px;
     margin-right: -32px;
   }
+}
 
+/* -- Big desktop */
+@media screen and (min-width: 1200px) {
+  .article__featured-image-wrapper {
+    border-radius: 30px;
+  }
 }
 
 .article__featured-image {
@@ -576,7 +594,23 @@ hr {
   object-fit: cover;
 }
 
-/* --------- Comic page (mobile) --------- */
+/* -- Big desktop */
+@media screen and (min-width: 1250px) {
+  .article__header__tag,
+  .article__header__title,
+  .article__excerpt,
+  .article__meta,
+  .article__content,
+  .similar-articles
+  {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* --------- COMIC PAGE --------- */
 .comic {
   display: flex;
   justify-content: flex-start;
