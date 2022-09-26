@@ -472,6 +472,54 @@ a {
 
 }
 
+/* --------- COMICS CATEGORY PAGE --------- */
+.category-comics__description {
+  margin-bottom: 32px;
+}
+
+.category-comics__serie__thumbnail {
+  border: 1px #9E9E9E solid;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 32px;
+  position: relative;
+  padding: 8px;
+}
+
+.category-comics__serie__illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 220px;
+  width: auto;
+}
+
+/* -- Tablets */
+@media screen and (min-width: 750px) {
+  .category-comics__serie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .category-comics__serie__thumbnail {
+    width: 340px;
+  }
+
+}
+
+.category-comics__serie__titre {
+  font-size: 1.5rem;
+  color: var(--ghost-accent-color);
+}
+
+.category-comics__serie__count {
+  color: #001C46;
+  font-size: 1.2rem;
+}
+
 /* --------- POST PAGE --------- */
 .article {
   display: flex;

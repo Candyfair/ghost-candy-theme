@@ -1,0 +1,71 @@
+{{!< default}}
+
+<div class="category-comics">
+
+  <h1 class="category__title">{{tag.name}}</h1>
+
+  {{#if tag.description}}
+  <p class="category__description category-comics__description">{{tag.description}}</p>
+  {{/if}}
+
+  
+
+  {{!-- Series --}}
+  <div class="category-comics__serie">
+
+    {{!-- Webtoons --}}
+    <a href="" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">My Webtoons</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:webcomic"}}{{posts.length}}{{/get}} {{#tag}}{{#has slug="comics"}}comics{{/has}}{{/tag}}</p>
+        <img
+          src="{{asset "img/tag_webtoons.png"}}"
+          alt="My Webtoons"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+
+    {{!-- Daily comics --}}
+    <a href="" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Daily comics</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:daily-comics"}}{{posts.length}}{{/get}} {{#tag}}{{#has slug="comics"}}comics{{/has}}{{/tag}}</p>
+        <img
+          src="{{asset "img/tag_daily.png"}}"
+          alt="Daily comics"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+
+
+    {{!-- Scotland --}}
+    <a href="" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Trips to Scotland</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:scotland"}}{{posts.length}}{{/get}} {{#tag}}{{#has slug="comics"}}comics{{/has}}{{/tag}}</p>
+        <img
+          src="{{asset "img/tag_scotland.png"}}"
+          alt="Trip to Scotland"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+
+    {{!-- Lockdown stories --}}
+    <a href="" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Lockdown stories</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:scotland"}}{{posts.length}}{{/get}} {{#tag}}{{#has slug="comics"}}comics{{/has}}{{/tag}}</p>
+        <img
+          src="{{asset "img/tag_lockdown.png"}}"
+          alt="Lockdown stories"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+  </div>
+
+
+</div>
