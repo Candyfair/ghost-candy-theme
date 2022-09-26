@@ -1,0 +1,27 @@
+{{!< default}}
+
+<div class="category">
+
+  <h1 class="category__title">{{tag.name}}</h1>
+
+  {{#if tag.description}}
+  <p class="category__description">{{tag.description}}</p>
+  {{/if}}
+
+  <h2 class="category__latest-posts">{{#get 'posts' filter="tag:{{tag.slug}}"}}{{posts.length}}{{/get}} comics</h2>
+
+  {{!-- List of posts --}}
+  {{#get 'posts' filter="tag:{{tag.slug}}"}}
+    <div class="posts__feed">
+      {{#foreach posts}}
+          {{> "post-card"}}
+      {{/foreach}}
+
+      <div class="filling-empty-space-childs"></div>
+      <div class="filling-empty-space-childs"></div>
+
+    </div>
+
+  {{/get}}
+
+</div>
