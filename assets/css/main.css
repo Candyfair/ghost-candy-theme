@@ -626,8 +626,11 @@ a {
   width: 100%;
   max-width: 800px;
   height: auto;
-  border-radius: 30px;
   margin: 0 auto;
+}
+
+.article__content .kg-image {
+  border-radius: 30px;
 }
 
 blockquote {
