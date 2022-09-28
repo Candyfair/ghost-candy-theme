@@ -439,7 +439,9 @@ a {
 }
 
 .post-card__excerpt {
-  /* display: none; */
+  color: #777777;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .post-card__meta {
