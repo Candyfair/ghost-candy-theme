@@ -439,7 +439,7 @@ a {
 }
 
 .post-card__excerpt {
-  display: none;
+  /* display: none; */
 }
 
 .post-card__meta {
