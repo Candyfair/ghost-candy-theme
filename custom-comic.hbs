@@ -10,6 +10,10 @@
 
   {{!-- Article meta info --}}
   <div>
+    {{#if custom_excerpt}}
+      <p class="article__excerpt comic__excerpt">{{custom_excerpt}}</p>
+    {{/if}}
+
     <div class="article__meta">
       Published on <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
     </div>
@@ -18,7 +22,7 @@
 </article>
 
 {{!-- Navigation --}}
-{{> "pagination-comics"}}
+{{!-- {{> "pagination-comics"}} --}}
 {{/post}}
 
 

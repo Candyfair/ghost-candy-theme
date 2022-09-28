@@ -339,13 +339,14 @@ a {
 .post-card__image__height {
   width: 130px;
   height: 100px;
+  object-fit: cover;
 }
 
 /* -- Tablets */
 @media screen and (min-width: 600px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
-    height: 300px;
+    /* height: 300px; */
   }
   .post-card__image__height-wrapper {
     height: 200px;
@@ -363,7 +364,7 @@ a {
 @media screen and (min-width: 1024px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
-    height: 400px;
+    /* height: 400px; */
   }
   .post-card__image__height-wrapper {
     height: 300px;
@@ -731,6 +732,11 @@ hr {
   color: var(--ghost-accent-color);
   font-size: 1.3rem;
   text-align: center;
+}
+
+.comic__excerpt {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /* --------- Similar articles (mobile) --------- */
