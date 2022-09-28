@@ -3,7 +3,7 @@
   {{!-- Si image --}}
   {{#if feature_image}}
   <div class="post-card__image-wrapper{{#is "home"}}{{#has index="0"}} post-card__image-wrapper-featured{{/has}}{{/is}}{{^has index="0"}} post-card__image__height-wrapper{{/has}}{{^is "home"}}{{#has index="0"}} post-card__image__height-wrapper{{/has}}{{/is}}">
-    <a href="{{url}}">
+    <a href="{{url}}" class="post-cart__image__link">
       <img class="post-card__image{{^has index="0"}} post-card__image__height{{/has}}{{^is "home"}}{{#has index="0"}} post-card__image__height{{/has}}{{/is}}"
         srcset="{{img_url feature_image size="s"}} 300w,
           {{img_url feature_image size="m"}} 600w,

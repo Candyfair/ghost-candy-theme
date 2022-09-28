@@ -268,6 +268,14 @@ a {
   align-items: center;
 }
 
+.post-card-featured {
+  width: 100%;
+}
+
+.post-cart__image__link {
+  width: 100%;
+}
+
 /* -- Desktop */
 @media screen and (min-width: 1024px) {
   .posts__feed {
@@ -346,7 +354,8 @@ a {
 @media screen and (min-width: 600px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
-    /* height: 300px; */
+    height: 100%;
+    max-height: 300px;
   }
   .post-card__image__height-wrapper {
     height: 200px;
@@ -364,7 +373,8 @@ a {
 @media screen and (min-width: 1024px) {
   .post-card__image-wrapper-featured {
     grid-column: 1 / 4;
-    /* height: 400px; */
+    height: 100%;
+    max-height: 400px;
   }
   .post-card__image__height-wrapper {
     height: 300px;
