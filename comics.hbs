@@ -39,7 +39,6 @@
       </div>
     </a>
 
-
     {{!-- Scotland --}}
     <a href="/tag/scotland" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
@@ -65,7 +64,20 @@
         />
       </div>
     </a>
+
+
+    {{!-- Canada --}}
+    <a href="/tag/canada" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Trip to Canada</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:canada"}}{{posts.length}}{{/get}} comics</p>
+        <img
+          src="{{asset "img/tag_canada.png"}}"
+          alt="Trip to Canada"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+
   </div>
-
-
 </div>
