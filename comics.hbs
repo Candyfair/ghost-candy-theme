@@ -52,6 +52,19 @@
       </div>
     </a>
 
+    {{!-- South Korea --}}
+    <a href="/tag/south-korea" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Trip to South Korea</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:south-korea"}}{{posts.length}}{{/get}} comics</p>
+        <img
+          src="{{asset "img/tag_korea.png"}}"
+          alt="Trip to South Korea"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+
     {{!-- Lockdown stories --}}
     <a href="/tag/lockdown" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
@@ -65,19 +78,6 @@
       </div>
     </a>
 
-    {{!-- Pengers --}}
-    <a href="/tag/pengers" class="category-comics__serie__link">
-      <div class="category-comics__serie__thumbnail">
-        <h2 class="category-comics__serie__titre">Pengers the penguin</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:pengers"}}{{posts.length}}{{/get}} comics</p>
-        <img
-          src="{{asset "img/tag_pengers.png"}}"
-          alt="Pengers the penguin"
-          class="category-comics__serie__illustration"
-        />
-      </div>
-    </a>
-
     {{!-- Canada --}}
     <a href="/tag/canada" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
@@ -86,6 +86,19 @@
         <img
           src="{{asset "img/tag_canada.png"}}"
           alt="Trip to Canada"
+          class="category-comics__serie__illustration"
+        />
+      </div>
+    </a>
+
+    {{!-- Pengers --}}
+    <a href="/tag/pengers" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Pengers the penguin</h2>
+        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:pengers"}}{{posts.length}}{{/get}} comics</p>
+        <img
+          src="{{asset "img/tag_pengers.png"}}"
+          alt="Pengers the penguin"
           class="category-comics__serie__illustration"
         />
       </div>
