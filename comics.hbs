@@ -17,7 +17,7 @@
     <a href="/tag/webtoons/" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">My Webtoons</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:webtoons"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:webtoons"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_webtoons.png"}}"
           alt="My Webtoons"
@@ -30,7 +30,7 @@
     <a href="/tag/daily-comics" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">Daily comics</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:daily-comics"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:daily-comics"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_daily.png"}}"
           alt="Daily comics"
@@ -43,7 +43,7 @@
     <a href="/tag/scotland" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">Trips to Scotland</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:scotland"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:scotland"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_scotland.png"}}"
           alt="Trip to Scotland"
@@ -56,7 +56,7 @@
     <a href="/tag/south-korea" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">Trip to South Korea</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:south-korea"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:south-korea"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_korea.png"}}"
           alt="Trip to South Korea"
@@ -69,7 +69,7 @@
     <a href="/tag/lockdown" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">Lockdown stories</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:lockdown"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:lockdown"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_lockdown.png"}}"
           alt="Lockdown stories"
@@ -82,7 +82,7 @@
     <a href="/tag/canada" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">Trip to Canada</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:canada"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:canada"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_canada.png"}}"
           alt="Trip to Canada"
@@ -95,7 +95,7 @@
     <a href="/tag/pengers" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
         <h2 class="category-comics__serie__titre">Pengers the penguin</h2>
-        <p class="category-comics__serie__count">{{#get 'posts' filter="tag:pengers"}}{{posts.length}}{{/get}} comics</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:pengers"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_pengers.png"}}"
           alt="Pengers the penguin"
