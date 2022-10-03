@@ -1,0 +1,36 @@
+<article class="post-card-comics{{#has index="0"}} first-card-comics{{/has}}">
+
+  {{!-- Si image --}}
+  {{#if feature_image}}
+  <div class="post-card-comics__image-wrapper">
+    <a href="{{url}}" class="post-card-comics__image__link">
+      <img class="post-card-comics__image"
+        srcset="{{img_url feature_image size="s"}} 300w,
+          {{img_url feature_image size="m"}} 600w,
+          {{img_url feature_image size="l"}} 1000w,
+          {{img_url feature_image size="xl"}} 2000w"
+        sizes="(max-width: 1000px) 400px, 800px"
+        src="{{img_url feature_image size="m"}}"
+        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+        loading="lazy"
+      />
+    </a>
+  </div>
+  {{/if}}
+  
+  {{!-- Titre et meta --}}
+  <div class="post-card-comics__meta-wrapper">
+
+    <a href="{{url}}">
+      <h2 class="post-card-comics__title">
+        {{title}}
+      </h2>
+    </a>
+
+    <div class="post-card-comics__meta">
+      <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+    </div>
+  </div>
+
+
+</article>

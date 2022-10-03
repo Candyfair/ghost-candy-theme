@@ -1,27 +1,25 @@
 {{!< default}}
 
-<div class="category">
+<div class="tag">
 
-  <h1 class="category__title">{{tag.name}}</h1>
+  <h1 class="tag__title">{{tag.name}}</h1>
+
+  <h2 class="tag__latest-posts">{{#get 'posts' limit="all" filter="tag:{{tag.slug}}"}}{{posts.length}}{{/get}} comics in this collection</h2>
 
   {{#if tag.description}}
-  <p class="category__description">{{tag.description}}</p>
+  <p class="tag__description">{{tag.description}}</p>
   {{/if}}
 
-  <h2 class="category__latest-posts">{{#get 'posts' limit="all" filter="tag:{{tag.slug}}"}}{{posts.length}}{{/get}} comics</h2>
 
   {{!-- List of posts --}}
-  {{#get 'posts' filter="tag:{{tag.slug}}"}}
-    <div class="posts__feed">
-      {{#foreach posts}}
-          {{> "post-card"}}
-      {{/foreach}}
+  {{#get 'posts' limit="all" filter="tag:{{tag.slug}}"}}
+  <div class="tag__post-feed">
 
-      <div class="filling-empty-space-childs"></div>
-      <div class="filling-empty-space-childs"></div>
+    {{#foreach posts}}
+        {{> "post-card-comics"}}
+    {{/foreach}}
 
-    </div>
-
+  </div>
   {{/get}}
 
 </div>
