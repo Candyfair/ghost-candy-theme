@@ -11,6 +11,11 @@ a {
   font-weight: 700;
 }
 
+
+.back-link {
+  color: var(--ghost-accent-color);
+}
+
 /* ----------------------- GHOST ADMIN ----------------------- */
 .kg-width-full img,
 .kg-width-wide img {
@@ -532,6 +537,7 @@ a {
 .tag__post-feed {
   margin-left: -16px;
   margin-right: -16px;
+  margin-bottom: 24px;
 }
 
 /* --------- Category index  --------- */
