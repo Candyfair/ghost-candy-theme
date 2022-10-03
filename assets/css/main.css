@@ -492,7 +492,7 @@ a {
 .post-card-comics__meta-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 
   padding-left: 8px;
@@ -511,10 +511,28 @@ a {
   font-style: italic;
 }
 
-.post-card-comics__number {
-  width: 50px;
-  display: flex;
-  justify-content: center;
+/* -- Tablets */
+@media screen and (min-width: 600px) {
+  .post-card-comics {
+    border-left: 1px solid #EDEDF1;
+    border-right: 1px solid #EDEDF1;
+    height: 151px;
+  }
+
+  .post-card-comics__meta-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .post-card-comics__title {
+    font-size: 1.4rem;
+  }
+
+  .post-card-comics__image-wrapper {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+  }
 }
 
 
@@ -538,6 +556,15 @@ a {
   margin-left: -16px;
   margin-right: -16px;
   margin-bottom: 24px;
+}
+
+/* -- Tablets */
+@media screen and (min-width: 600px) {
+  .tag__post-feed {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 90%;
+  }
 }
 
 /* --------- Category index  --------- */
