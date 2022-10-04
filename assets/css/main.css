@@ -700,13 +700,17 @@ a {
 
 /* --------- COMICS CATEGORY PAGE --------- */
 .category-comics__description {
-  color: #001C46;
+  color: #001C46; 
 }
 
 .category-comics__subtitle {
   margin-top: 24px;
   margin-bottom: 24px;
   text-align: center;
+}
+
+.last-episodes {
+  color: var(--ghost-accent-color);
 }
 
 .category-comics__serie__thumbnail {
@@ -718,6 +722,10 @@ a {
   position: relative;
   padding: 8px;
   transition: 0.3s;
+}
+
+.webtoons-category {
+  background-color: #F3F3F3;
 }
 
 .category-comics__serie__illustration {
@@ -741,7 +749,6 @@ a {
   font-size: 1rem;
   line-height: 1.2;
   color: #777777;
-  /* color: #001C46; */
 }
 
 .category-comics__serie__count {
@@ -749,7 +756,7 @@ a {
   font-size: 1.2rem;
 }
 
-/* -- Tablets */
+/* -- Tablets & desktop */
 @media screen and (min-width: 750px) {
   .category-comics__serie {
     display: flex;
@@ -764,7 +771,7 @@ a {
 
   .category-comics__serie__thumbnail:hover {
     border: 3px #C10080 solid;
-    background-color: #EDEDF1;
+    background-color: #F3F3F3;
   }
 
   .category-comics__post-feed {

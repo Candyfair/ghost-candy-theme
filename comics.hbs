@@ -9,7 +9,7 @@
   {{/if}}
 
   {{!-- Last comics --}}
-  <h2 class="category-comics__subtitle">Last published</h2>
+  <h2 class="category-comics__subtitle last-episodes">Last episodes published</h2>
 
   <div class="category-comics__post-feed">
     {{#get 'posts' limit="3" filter="primary_tag:comics"}}
@@ -19,16 +19,16 @@
     {{/get}}
   </div>
   
-  <h2 class="category-comics__subtitle">Browse by collection</h2>
+  <h2 class="category-comics__subtitle">- Browse by collection -</h2>
 
   {{!-- Series --}}
   <div class="category-comics__serie">
 
     {{!-- Webtoons --}}
     <a href="/tag/webtoons/" class="category-comics__serie__link">
-      <div class="category-comics__serie__thumbnail">
+      <div class="category-comics__serie__thumbnail  webtoons-category">
         <h2 class="category-comics__serie__titre">My Webtoons</h2>
-        <p class="category-comics__serie__summary">All the comics in this collection are vertically formatted to be best read on a smartphone</p>
+        <p class="category-comics__serie__summary">Comics from various collections, vertically formatted to be best read on smartphones</p>
         <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:webtoons"}}{{posts.length}}{{/get}} comics</p>
         <img
           src="{{asset "img/tag_webtoons.png"}}"
