@@ -256,6 +256,7 @@ a {
   transform: rotate(15deg);
   height: 90px;
   width: auto;
+  cursor: pointer;
 }
 
 .header__nav {
