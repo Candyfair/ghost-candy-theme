@@ -1,0 +1,15 @@
+{{#get 'posts'}}
+	<div class="similar-articles">
+    <h2 class="similar-articles__title">My last articles</h2></a>
+
+	  <div class="posts__feed">
+      {{#foreach posts limit="3" order="published_at desc"}}
+        {{> "post-card"}}
+      {{/foreach}}
+
+      <div class="filling-empty-space-childs"></div>
+      <div class="filling-empty-space-childs"></div>
+
+	  </div>
+	</div>
+{{/get}}
