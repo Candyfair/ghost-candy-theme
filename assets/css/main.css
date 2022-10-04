@@ -213,6 +213,7 @@ a {
   transform: translate(-50%);
 }
 
+/* -- Tablet */
 @media screen and (max-width: 600px) {
   .header__bubble-wrapper {
     top: 15px;
@@ -247,6 +248,81 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+/* ---------- About Page ---------- */
+.about {
+  text-align: center;
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.about h2 {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--ghost-accent-color);
+  width: 70%;
+}
+
+.about p {
+  margin-bottom: 16px;
+}
+
+.about a {
+  color: var(--ghost-accent-color);
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+.about__header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #EDEDF1;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: #EDEDF1;
+}
+
+.about__header__image {
+  max-width: 250px;
+}
+
+.about__header__excerpt {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* -- Tablet */
+@media screen and (min-width: 600px) {
+  .about__header-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about__header__image {
+    max-width: 300px;
+  }
+
+  .about__header__excerpt {
+    max-width: 270px;
+    font-size: 1.7rem;
+  }
+
+}
+
+.about__content {
+  text-align: justify;
 }
 
 /* --------- Posts index --------- */

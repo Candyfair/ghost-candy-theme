@@ -1,6 +1,23 @@
 {{!< default}}
 
 {{#page}}
-  <h1>Page: {{title}}</h1>
-  <div>{{content}}</div>
+<article class="about">
+
+  <h1 class="about__title">{{title}}</h1>
+
+  {{!-- Header --}}
+  <div class="about__header-wrapper">
+    <img
+      src="{{asset "img/about-candy.png"}}"
+      alt="Candy Gets Handy"
+      class="about__header__image"
+    >
+    <div class="about__header__excerpt">{{excerpt}}</div>
+  </div>
+
+
+  {{!-- Content --}}
+  <div class="about__content">{{content}}</div>
+
+</article>
 {{/page}}
