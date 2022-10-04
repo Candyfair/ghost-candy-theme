@@ -213,6 +213,10 @@ a {
   transform: translate(-50%);
 }
 
+.header-desktop {
+  display: none;    
+} 
+
 /* -- Tablet */
 @media screen and (max-width: 600px) {
   .header__bubble-wrapper {
@@ -230,8 +234,21 @@ a {
 
 /* -- Big desktop */
 @media screen and (min-width: 1200px) {
-  .header__bubble-wrapper {
+  .header-tablet {
     display: none;
+  }
+
+  .header-desktop {
+    display: flex;
+  }
+
+  .header__logo {
+    align-items: flex-start;
+  }
+
+  .header__bubble-wrapper {
+    position: relative;
+    left: 20px;
   }  
 }
 
