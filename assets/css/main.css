@@ -278,15 +278,6 @@ a {
   margin-bottom: 16px;
 }
 
-.about h2 {
-  margin: 0 auto;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  text-align: center;
-  line-height: 1.2;
-  color: var(--ghost-accent-color);
-  width: 70%;
-}
 
 .about p {
   margin-bottom: 16px;
@@ -318,8 +309,27 @@ a {
 .about__header__excerpt {
   margin-top: 16px;
   margin-bottom: 8px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
+}
+
+.about__content {
+  text-align: justify;
+}
+
+.about__content p {
+  font-size: 1.3rem;
+}
+
+.about__content h2 {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--ghost-accent-color);
+  font-size: 1.7rem;
+  width: 70%;
 }
 
 /* -- Tablet */
@@ -337,10 +347,6 @@ a {
     font-size: 1.7rem;
   }
 
-}
-
-.about__content {
-  text-align: justify;
 }
 
 /* --------- Posts index --------- */
