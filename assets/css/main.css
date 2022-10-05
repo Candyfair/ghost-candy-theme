@@ -329,7 +329,7 @@ a {
   line-height: 1.2;
   color: var(--ghost-accent-color);
   font-size: 1.7rem;
-  width: 70%;
+  width: 80%;
 }
 
 /* -- Tablet */
@@ -724,7 +724,7 @@ a {
   border-radius: 8px;
   width: 100%;
   height: 200px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   position: relative;
   padding: 8px;
   transition: 0.3s;
@@ -760,6 +760,13 @@ a {
 .category-comics__serie__count {
   color: #001C46;
   font-size: 1.2rem;
+}
+
+.category-comics__updated {
+  font-weight: 400;
+  color: #9E9E9E;
+  padding-top: 6px;
+  font-size: 0.8rem;
 }
 
 /* -- Tablets & desktop */

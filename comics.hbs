@@ -35,6 +35,7 @@
           alt="My Webtoons"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:webtoons"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
@@ -49,6 +50,7 @@
           alt="Daily comics"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:daily-comics"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
@@ -63,6 +65,7 @@
           alt="Trip to Scotland"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:scotland"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
@@ -77,6 +80,7 @@
           alt="Trip to South Korea"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:south-korea"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
@@ -91,6 +95,7 @@
           alt="Lockdown stories"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:lockdown"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
@@ -105,6 +110,7 @@
           alt="Trip to Canada"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:canada"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
@@ -119,6 +125,7 @@
           alt="Pengers the penguin"
           class="category-comics__serie__illustration"
         />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:pengers"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
       </div>
     </a>
 
