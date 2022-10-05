@@ -13,7 +13,7 @@
       </a>
     </li>
     {{#foreach navigation}}
-      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}" class="menu-desktop__link">{{label}}</a></li>
+      <li><a href="{{url absolute="true"}}" class="menu-desktop__link{{#if current}} nav-current{{/if}}">{{label}}</a></li>
     {{/foreach}}
     <!-- End the loop -->
   </ul>
@@ -27,7 +27,7 @@
 <div class="menu-mobile">
   <div class="menu-mobile__container">
     <ul>
-      {{#get "tags" limit="all" order="name desc" filter="slug:[illustration, comics, crafts, web-development]"}}
+      {{#get "tags" limit="all" order="name desc" filter="slug:[illustration, comics, crafts, ux-coding]"}}
       {{#foreach tags}}
       <li><a href="{{url}}" class="menu-mobile__link">{{name}}</a></li>
       {{/foreach}}

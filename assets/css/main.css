@@ -76,6 +76,15 @@ a {
     text-decoration: underline;
   }
 
+  .nav-current {
+    color: var(--ghost-accent-color);
+    cursor: default;
+  }
+
+  .nav-current:hover {
+    text-decoration: none;
+  }
+
   .menu-desktop__shop-link {
     text-decoration: none;
     padding: 11px 24px;
