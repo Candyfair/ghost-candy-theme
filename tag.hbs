@@ -4,7 +4,7 @@
 
   <h1 class="tag__title">{{tag.name}}</h1>
 
-  <h2 class="tag__latest-posts">{{#get 'posts' limit="all" filter="tag:{{tag.slug}}"}}{{posts.length}}{{/get}} comics in this collection</h2>
+  <h2 class="tag__latest-posts">{{#get 'posts' limit="all" filter="tag:{{tag.slug}}"}}{{posts.length}}{{/get}} posts in this collection</h2>
 
   {{#if tag.description}}
   <p class="tag__description">{{tag.description}}</p>

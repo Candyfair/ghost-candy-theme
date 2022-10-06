@@ -114,6 +114,21 @@
       </div>
     </a>
 
+    {{!-- Watercolour --}}
+    <a href="/tag/watercolour" class="category-comics__serie__link">
+      <div class="category-comics__serie__thumbnail">
+        <h2 class="category-comics__serie__titre">Watercolour short stories</h2>
+        <p class="category-comics__serie__summary">A variety of comics scribbled in my sketchbooks, that weren't initially meant for publication!</p>
+        <p class="category-comics__serie__count">{{#get 'posts' limit="all" filter="tag:watercolour"}}{{posts.length}}{{/get}} comics</p>
+        <img
+          src="{{asset "img/tag_watercolour.png"}}"
+          alt="Watercolour stories"
+          class="category-comics__serie__illustration"
+        />
+        <p class="category-comics__updated">Last updated: {{#get 'posts' limit="1" filter="tag:watercolour"}}{{#foreach posts}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>{{/foreach}}{{/get}}</p>
+      </div>
+    </a>
+
     {{!-- Pengers --}}
     <a href="/tag/pengers" class="category-comics__serie__link">
       <div class="category-comics__serie__thumbnail">
