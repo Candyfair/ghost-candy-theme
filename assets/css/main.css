@@ -946,6 +946,10 @@ hr {
   margin: 0 auto;
 }
 
+.kg-bookmark-card {
+  margin-bottom: 12px;
+}
+
 /* -- Big desktop */
 @media screen and (min-width: 1250px) {
   .article__header__tag,
