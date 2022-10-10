@@ -939,6 +939,12 @@ hr {
   object-fit: cover;
 }
 
+.article__content iframe {
+  border: 0;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
 
 /* -- Big desktop */
 @media screen and (min-width: 1250px) {
