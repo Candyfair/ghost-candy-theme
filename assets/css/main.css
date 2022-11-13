@@ -1179,4 +1179,46 @@ figcaption a,
   margin-bottom: 16px;
 }
 
+/* --------- ERROR 404 --------- */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
 
+.error a {
+  color: var(--ghost-accent-color);
+}
+
+.error__title {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.error__subtitle {
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  max-width: 80%;
+}
+
+.error p {
+  margin-bottom: 12px;
+}
+
+.error__paragraph {
+  max-width: 500px;
+}
+
+/* -- Tablets & desktop */
+@media screen and (min-width: 800px) {
+  .error {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+
+}
