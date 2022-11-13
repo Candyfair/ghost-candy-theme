@@ -1194,19 +1194,26 @@ figcaption a,
 
 .error__title {
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.1;
+  font-size: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  color: var(--ghost-accent-color);
 }
 
 .error__subtitle {
   text-align: center;
+  font-size: 2rem;
   line-height: 1.3;
   margin: 0 auto;
   margin-bottom: 16px;
-  max-width: 80%;
 }
 
 .error p {
   margin-bottom: 12px;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 
 .error__paragraph {
@@ -1214,11 +1221,22 @@ figcaption a,
 }
 
 /* -- Tablets & desktop */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .error {
     justify-content: space-evenly;
     flex-direction: row;
   }
 
+  .error__paragraph {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
+  .error__title, .error__subtitle {
+    text-align: left;
+    margin-left: 0;
+    max-width: 300px;
+  }
 }

@@ -7,17 +7,6 @@
   {{#if tag.description}}
   <p class="category__description category-comics__description">{{tag.description}}</p>
   {{/if}}
-
-  {{!-- Last comics --}}
-  <h2 class="category-comics__subtitle last-episodes">Last episodes published</h2>
-
-  <div class="category-comics__post-feed">
-    {{#get 'posts' limit="3" filter="primary_tag:comics"}}
-    {{#foreach posts}}
-        {{> "post-card"}}
-    {{/foreach}}
-    {{/get}}
-  </div>
   
   <h2 class="category-comics__subtitle">- Browse by collection -</h2>
 
@@ -144,6 +133,17 @@
       </div>
     </a>
 
+  </div>
+
+  {{!-- Last comics --}}
+  <h2 class="category-comics__subtitle last-episodes">Last episodes published</h2>
+
+  <div class="category-comics__post-feed">
+    {{#get 'posts' limit="3" filter="primary_tag:comics"}}
+    {{#foreach posts}}
+        {{> "post-card"}}
+    {{/foreach}}
+    {{/get}}
   </div>
 
   {{> "back"}}
