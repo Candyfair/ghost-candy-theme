@@ -1,0 +1,21 @@
+{{!< default}}
+
+<div class="category-comics">
+
+  <h1 class="category__title">{{tag.name}}</h1>
+
+  {{#if tag.description}}
+  <p class="category__description category-comics__description">{{tag.description}}</p>
+  {{/if}}
+  
+
+  <div class="category-comics__post-feed">
+    {{#get 'posts' limit="3" filter="primary_tag:shop"}}
+    {{#foreach posts}}
+        {{> "post-card"}}
+    {{/foreach}}
+    {{/get}}
+  </div>
+
+  {{> "back"}}
+</div>
