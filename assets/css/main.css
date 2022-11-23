@@ -667,6 +667,10 @@ a {
   margin-bottom: 16px;
 }
 
+.post-card-shop a {
+  color: #001C46;
+}
+
 .post-card-shop__image-wrapper {
   border-bottom: 1px solid #001C46;
 }
@@ -769,6 +773,7 @@ a {
 /* --------- Custom page for shop products --------- */
 .shop {
   width: 100%;
+  margin-top: 24px;
 }
 
 .shop__content {
