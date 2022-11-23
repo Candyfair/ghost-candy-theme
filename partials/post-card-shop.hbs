@@ -1,0 +1,35 @@
+<article class="post-card-shop">
+
+  {{!-- Si image --}}
+  {{#if feature_image}}
+  <div class="post-card-shop__image-wrapper">
+    <img class="post-card-shop__image"
+      srcset="{{img_url feature_image size="s"}} 300w,
+        {{img_url feature_image size="m"}} 600w,
+        {{img_url feature_image size="l"}} 1000w,
+        {{img_url feature_image size="xl"}} 2000w"
+      sizes="(max-width: 1000px) 400px, 800px"
+      src="{{img_url feature_image size="m"}}"
+      alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+      loading="lazy"
+    />
+  </div>
+  {{/if}}
+  
+  <div class="post-card-shop__text-wrapper">
+    <div class="post-card-shop__title-wrapper">
+      <a href="{{url}}">
+        <h2 class="post-card-shop__title">
+          {{title}}
+        </h2>
+      </a>
+    </div>
+
+    <div class="post-card-shop__button__price">
+      <div class="price-tag"></div>
+      <span class="price">{{excerpt}}</span>
+    </div>
+  </div>
+
+
+</article>

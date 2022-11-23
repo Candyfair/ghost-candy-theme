@@ -644,6 +644,69 @@ a {
   }
 }
 
+/* --------- Post cards for SHOP (tag page) --------- */
+.post-card-shop {
+  border: 1px solid #001C46;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.post-card-shop__image-wrapper {
+  border-bottom: 1px solid #001C46;
+}
+
+.post-card-shop__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.post-card-shop__title-wrapper {
+  padding: 8px;
+  border-right: 1px solid #001C46;
+}
+
+.post-card-shop__title {
+  font-weight: 400;
+  line-height: 1.2;
+  color: #001C46;
+}
+
+.post-card-shop__button__price {
+  padding: 16px;
+  position: relative;
+}
+
+.price-tag {
+  background: #ff90e8;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  transform: rotate(20deg);
+}
+.price-tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: #ff90e8;
+  transform: rotate(135deg);
+}
+
+.price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
 
 /* --------- TAG PAGE (for comics) --------- */
 .tag {
