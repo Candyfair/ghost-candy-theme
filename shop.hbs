@@ -2,15 +2,17 @@
 
 <div class="category-comics">
 
-  <h1 class="category__title">{{tag.name}}</h1>
+  <h1 class="shop__title">Candy Fair Studio</h1>
+  <h2 class="shop__subtitle">{{tag.name}}</h2>
+
 
   {{#if tag.description}}
   <p class="category__description category-comics__description">{{tag.description}}</p>
   {{/if}}
   
 
-  <div class="category-comics__post-feed">
-    {{#get 'posts' filter="primary_tag:shop"}}
+  <div class="shop__post-feed">
+    {{#get 'posts' limit="all" filter="primary_tag:shop" order="published_at asc"}}
     {{#foreach posts}}
         {{> "post-card-shop"}}
     {{/foreach}}
