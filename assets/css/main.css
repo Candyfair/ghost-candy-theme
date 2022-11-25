@@ -983,6 +983,7 @@ a {
     margin-left: -32px;
     margin-right: -32px;
   }
+
 }
 
 /* -- Big desktop */
@@ -990,6 +991,7 @@ a {
   .article__featured-image-wrapper {
     border-radius: 30px;
   }
+
 }
 
 .article__featured-image {
