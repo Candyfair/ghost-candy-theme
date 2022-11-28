@@ -2,6 +2,8 @@
 
 I created this custom theme for a personal publishing platform hosted on [Ghost](https://ghost.org/). The back-end is hosted on Digital Ocean and this customised theme is deployed to my Ghost website via GitHub Actions.
 
+> ***Please note that this  theme is still a work in progress. In its current form, you shouldn't install it in your production environment***
+
 ## Overview
 
 ### Screenshot (mobile view)
