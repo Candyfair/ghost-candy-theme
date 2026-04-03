@@ -7,6 +7,11 @@
   </div>
 
   <div class="footer__copyright">
-    Candy Fair © 2022. All rights Reserved.
+    Candy Fair © <span id="footer-year"></span>. All rights Reserved.
   </div>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
 </div>
