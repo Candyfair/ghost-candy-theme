@@ -1,0 +1,10 @@
+Sitemap: https://candygetshandy.com/sitemap.xml
+Disallow: /ghost/
+Disallow: /email/
+Disallow: /members/api/comments/counts/
+Disallow: /r/
+Disallow: /webmentions/receive/
+Disallow: /.ghost/analytics/api/
+Disallow: /tag/portfolio/
+Disallow: /tag/portfolio-about/
+Disallow: /tag/news/
